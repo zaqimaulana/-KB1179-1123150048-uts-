@@ -11,11 +11,16 @@ class SplashScreen1 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: 250,
-              height: 250,
+              width: 230,
+              height: 230,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.green,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/splash1.png"),
+                  fit: BoxFit.cover,
+                  alignment: Alignment.center,
+                ),
               ),
             ),
           ],
