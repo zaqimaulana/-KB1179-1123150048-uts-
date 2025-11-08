@@ -95,7 +95,7 @@ class Login extends StatelessWidget {
                       ),
                     ),
                   ),
-                  
+
                   const SizedBox(height: 10),
 
                   Align(
@@ -109,6 +109,48 @@ class Login extends StatelessWidget {
                           fontSize: 14,
                         ),
                       ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 10),
+
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green[700],
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      elevation: 2,
+                    ),
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(child: Divider(color: Colors.grey[300])),
+                      Padding(padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text('atau',
+                      style: TextStyle(color: Colors.grey[600])),
+                      ),
+                      Expanded(child: Divider(color: Colors.grey[300])),
+                    ],
+                  ),
+                  OutlinedButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
+                    label: Text('Login Dengan google', style: TextStyle(color: Colors.grey[500])),
+                    style: OutlinedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      side: BorderSide(color: Colors.grey[300]!),
                     ),
                   ),
                 ],
