@@ -10,6 +10,9 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(
+            flex: 3,
+            ),
             Container(
               width: 230,
               height: 230,
@@ -49,15 +52,15 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 45),
+            const SizedBox(height: 100),
 
             // 3 Bullet Indicator
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 15,
-                  height: 15,
+                  width: 12,
+                  height: 12,
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
@@ -65,8 +68,8 @@ class SplashScreen1 extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 15,
-                  height: 15,
+                  width: 12,
+                  height: 12,
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
@@ -74,8 +77,8 @@ class SplashScreen1 extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  width: 15,
-                  height: 15,
+                  width: 12,
+                  height: 12,
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
@@ -89,7 +92,7 @@ class SplashScreen1 extends StatelessWidget {
 
             // Tombol Continue
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 40),
+              margin: const EdgeInsets.symmetric(horizontal: 50),
               child: SizedBox(
                 width: double.infinity,
                 height: 40,
@@ -113,6 +116,10 @@ class SplashScreen1 extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
+
+            Spacer(
+            flex: 1,
             ),
           ],
         ),
