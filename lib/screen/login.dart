@@ -5,17 +5,16 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: const [
-              SizedBox(height: 50),
-              
-            ],
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
+      home: Scaffold(
+        body: const Center(
+          child: Text(
+            "welcome to Login Screen",
+            style: TextStyle(fontSize: 18, color: Colors.green),
           ),
         ),
       ),
