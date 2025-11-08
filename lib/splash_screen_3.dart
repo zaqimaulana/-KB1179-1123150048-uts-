@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'splash_screen_3.dart';
 
-class SplashScreen2 extends StatelessWidget {
-  const SplashScreen2({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class SplashScreen2 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: Colors.green,
                 image: DecorationImage(
-                  image: AssetImage("assets/images/splash2.png"),
+                  image: AssetImage("assets/images/splash3.png"),
                   fit: BoxFit.cover,
                   alignment: Alignment.center,
                 ),
@@ -44,7 +43,7 @@ class SplashScreen2 extends StatelessWidget {
 
             // Subtitle dua baris
             const Text(
-              "Don't worry! we got you cover.\nUse Wallie instead of cash!",
+              "Let's try Wallie now!\nAnd get the best solution.",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14.0,
@@ -65,16 +64,7 @@ class SplashScreen2 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFB9F6CA), // aktif
-                  ),
-                ),
-                Container(
-                  width: 12,
-                  height: 12,
-                  margin: const EdgeInsets.symmetric(horizontal: 4),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color(0xFF00C853), // non-aktif
+                    color: Color(0xFFB9F6CA), // non-aktif
                   ),
                 ),
                 Container(
@@ -84,6 +74,15 @@ class SplashScreen2 extends StatelessWidget {
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Color(0xFFB9F6CA), // non-aktif
+                  ),
+                ),
+                Container(
+                  width: 12,
+                  height: 12,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFF00C853), // aktif
                   ),
                 ),
               ],
@@ -99,10 +98,7 @@ class SplashScreen2 extends StatelessWidget {
                 height: 40,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const SplashScreen3()),
-                    );
+                    // nanti diarahkan ke splash screen 2
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF00C853),
@@ -111,7 +107,7 @@ class SplashScreen2 extends StatelessWidget {
                     ),
                   ),
                   child: const Text(
-                    "Continue",
+                    "Get Started",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
