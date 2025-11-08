@@ -89,6 +89,7 @@ class SplashScreen1 extends StatelessWidget {
 
             // Tombol Continue
             Container(
+              margin: const EdgeInsets.symmetric(horizontal: 40),
               child: SizedBox(
                 width: double.infinity,
                 height: 40,
