@@ -9,6 +9,7 @@ class Login extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.green),
       home: Scaffold(
+        backgroundColor: const Color.fromARGB(255, 232, 253, 234),
         body: SingleChildScrollView(
           child: Center(
             child: Container(
