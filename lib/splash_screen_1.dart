@@ -26,12 +26,26 @@ class SplashScreen1 extends StatelessWidget {
 
             const SizedBox(height: 30), // jarak antara gambar dan teks
             
+            // Judul "Welcome"
             const Text(
               "Welcome",
               style: TextStyle(
                 fontSize: 32.0,
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
+              ),
+            ),
+
+            const SizedBox(height: 5),
+
+            // Subtitle dua baris
+            const Text(
+              "Forgot to bring your wallet when shopping?\nWe are here to help you!",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14.0,
+                color: Colors.green,
+                height: 1.5,
               ),
             ),
           ],
