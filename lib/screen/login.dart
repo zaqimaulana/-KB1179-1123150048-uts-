@@ -16,10 +16,10 @@ class Login extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  SizedBox(height: 80),
-                  Icon(Icons.lock_outline, size: 80, color: Colors.green),
-                  SizedBox(height: 20),
-                  Text(
+                  const SizedBox(height: 80),
+                  const Icon(Icons.lock_outline, size: 80, color: Colors.green),
+                  const SizedBox(height: 20),
+                  const Text(
                     'Welcome',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -30,7 +30,7 @@ class Login extends StatelessWidget {
                   ),
 
                   const SizedBox(height: 10),
-
+                  // Subtitle
                   const Text(
                     'Silakan login untuk melanjutkan',
                     textAlign: TextAlign.center,
@@ -41,6 +41,7 @@ class Login extends StatelessWidget {
                   ),
                   const SizedBox(height: 30),
 
+                  // TextField Email
                   const TextField(
                     keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
@@ -60,15 +61,15 @@ class Login extends StatelessWidget {
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(12)),
                         borderSide: BorderSide(
-                          color: Color(0xFF1976D2),
+                          color: Colors.green,
                           width: 2,
                         ),
                       ),
                     ),
                   ),
-                  
                   const SizedBox(height: 20),
 
+                  // TextField Password
                   const TextField(
                     obscureText: true,
                     decoration: InputDecoration(
@@ -89,15 +90,15 @@ class Login extends StatelessWidget {
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(12)),
                         borderSide: BorderSide(
-                          color: Color(0xFF1976D2),
+                          color: Colors.green,
                           width: 2,
                         ),
                       ),
                     ),
                   ),
-
                   const SizedBox(height: 10),
 
+                  // Tombol Lupa Password
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
@@ -105,19 +106,19 @@ class Login extends StatelessWidget {
                       child: const Text(
                         'Lupa Password?',
                         style: TextStyle(
-                          color: Color(0xFF1976D2),
+                          color: Colors.green,
                           fontSize: 14,
                         ),
                       ),
                     ),
                   ),
-
                   const SizedBox(height: 10),
 
+                  // Tombol Login
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green[700],
+                      backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
@@ -133,24 +134,38 @@ class Login extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(height: 10),
+
+                  // Garis pemisah “atau”
                   Row(
                     children: [
                       Expanded(child: Divider(color: Colors.grey[300])),
-                      Padding(padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: Text('atau',
-                      style: TextStyle(color: Colors.grey[600])),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Text(
+                          'atau',
+                          style: TextStyle(color: Colors.grey[600]),
+                        ),
                       ),
                       Expanded(child: Divider(color: Colors.grey[300])),
                     ],
                   ),
+                  const SizedBox(height: 10),
+
+                  // Tombol Login Google
                   OutlinedButton.icon(
                     onPressed: () {},
-                    icon: Icon(Icons.g_mobiledata, color: Colors.grey[800]),
-                    label: Text('Login Dengan google', style: TextStyle(color: Colors.grey[500])),
+                    icon: const Icon(Icons.g_mobiledata, color: Colors.black87),
+                    label: const Text(
+                      'Login dengan Google',
+                      style: TextStyle(color: Colors.black87),
+                    ),
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      side: BorderSide(color: Colors.grey[300]!),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      side: const BorderSide(color: Colors.green),
                     ),
                   ),
                 ],
