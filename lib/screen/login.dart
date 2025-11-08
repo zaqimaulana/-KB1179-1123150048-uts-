@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: const [
+                children: [
                   SizedBox(height: 80),
                   Icon(Icons.lock_outline, size: 80, color: Colors.green),
                   SizedBox(height: 20),
@@ -95,7 +95,22 @@ class Login extends StatelessWidget {
                       ),
                     ),
                   ),
+                  
+                  const SizedBox(height: 10),
 
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Lupa Password?',
+                        style: TextStyle(
+                          color: Color(0xFF1976D2),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
