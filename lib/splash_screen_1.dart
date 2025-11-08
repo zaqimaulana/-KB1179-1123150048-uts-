@@ -52,7 +52,7 @@ class SplashScreen1 extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 100),
+            const SizedBox(height: 90),
 
             // 3 Bullet Indicator
             Row(
@@ -88,7 +88,7 @@ class SplashScreen1 extends StatelessWidget {
               ],
             ),
 
-             const SizedBox(height: 20),
+             const SizedBox(height: 25),
 
             // Tombol Continue
             Container(
